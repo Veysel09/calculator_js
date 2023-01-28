@@ -1,0 +1,24 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 18rem;
+  background-color: rgb(2, 29, 20);
+  color: rgb(251, 251, 251);
+  margin: auto;
+  border-spacing: 1rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+td {
+  width: 20%;
+  height: 3rem;
+  background-color: rgb(49, 49, 48);
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 50%;
+}
