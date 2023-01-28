@@ -60,3 +60,13 @@ const calculate = () => {
     currentArea.innerText = calcValue;
   }
 };
+const result = () => {
+  console.log(previousArea.innerText);
+  if (currentArea.innerText == "" && previousArea.innerText !== "") {
+    currentArea.innerText = previousArea.innerText.slice(0, -1);
+    previousArea.innerText = "";
+  } else {
+    calculate();
+  }
+  console.log(currentArea.innerText);
+};
