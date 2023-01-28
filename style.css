@@ -22,3 +22,23 @@ td {
   font-family: "Montserrat", sans-serif;
   border-radius: 50%;
 }
+.selector {
+  color: black;
+  background-color: rgb(243, 241, 241);
+}
+.operationButtons,
+#gleich {
+  background-color: rgb(250, 163, 2);
+}
+#zero {
+  border-radius: 4rem;
+}
+td:hover {
+  color: black;
+  background-color: rgb(120, 119, 118);
+  transition: ease-in-out 0.3s;
+  border-radius: 50%;
+}
+#zero:hover {
+  border-radius: 4rem;
+}
