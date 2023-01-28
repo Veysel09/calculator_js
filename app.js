@@ -34,3 +34,29 @@ const selectOperation = (e) => {
   previousArea.innerText = currentArea.innerText + e;
   currentArea.innerText = "";
 };
+
+const calculate = () => {
+  const currentValue = parseFloat(currentArea.innerText);
+  const previousValue = parseFloat(previousArea.innerText.slice(0, -1));
+  let calcValue;
+  if (previousArea.innerText.includes("+")) {
+    calcValue = currentValue + previousValue;
+    previousArea.innerText = "";
+    currentArea.innerText = calcValue;
+  }
+  if (previousArea.innerText.includes("-")) {
+    calcValue = currentValue - previousValue;
+    previousArea.innerText = "";
+    currentArea.innerText = calcValue;
+  }
+  if (previousArea.innerText.includes("x")) {
+    calcValue = currentValue * previousValue;
+    previousArea.innerText = "";
+    currentArea.innerText = calcValue;
+  }
+  if (previousArea.innerText.includes("/")) {
+    calcValue = previousValue / currentValue;
+    previousArea.innerText = "";
+    currentArea.innerText = calcValue;
+  }
+};
